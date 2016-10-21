@@ -30,33 +30,62 @@ var letters = {
   90 : "z"
 }
 
+var shift = {
+  65 : "b",
+  66 : "c",
+  67 : "d",
+  68 : "e",
+  69 : "f",
+  70 : "g",
+  71 : "h",
+  72 : "i",
+  73 : "j",
+  74 : "k",
+  75 : "l",
+  76 : "m",
+  77 : "n",
+  78 : "o",
+  79 : "p",
+  80 : "q",
+  81 : "r",
+  82 : "s",
+  83 : "t",
+  84 : "u",
+  85 : "v",
+  86 : "w",
+  87 : "x",
+  88 : "y",
+  89 : "z",
+  90 : "a"
+}
+
 var decoder = {
   65 : "z",
-  66 : "y",
-  67 : "x",
-  68 : "w",
-  69 : "v",
-  70 : "u",
-  71 : "t",
-  72 : "s",
-  73 : "r",
-  74 : "q",
-  75 : "p",
-  76 : "o",
-  77 : "n",
+  66 : "a",
+  67 : "b",
+  68 : "c",
+  69 : "d",
+  70 : "e",
+  71 : "f",
+  72 : "g",
+  73 : "h",
+  74 : "i",
+  75 : "j",
+  76 : "k",
+  77 : "l",
   78 : "m",
-  79 : "l",
-  80 : "k",
-  81 : "j",
-  82 : "i",
-  83 : "h",
-  84 : "g",
-  85 : "f",
-  86 : "e",
-  87 : "d",
-  88 : "c",
-  89 : "b",
-  90 : "a"
+  79 : "n",
+  80 : "o",
+  81 : "p",
+  82 : "q",
+  83 : "r",
+  84 : "s",
+  85 : "t",
+  86 : "u",
+  87 : "v",
+  88 : "w",
+  89 : "x",
+  90 : "y"
 }
 
 //changing which radio button is checked
@@ -74,8 +103,12 @@ $("#inputText").keydown(function(e) {
       textArea.textContent = textArea.textContent.substr(0, textArea.textContent.length - 1);
   }
   //echo
-  else {
+  else if ($("input:checked").val() == "echo") {
     $("#textArea").append(letters[userKey]);
+  }
+  //caesarCipher
+  else if ($("input:checked").val() == "caesarCipher") {
+    $("#textArea").append(shift[userKey]);
   }
 });
 
