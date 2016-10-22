@@ -110,6 +110,16 @@ $("#inputText").keydown(function(e) {
   else if ($("input:checked").val() == "caesarCipher") {
     $("#textArea").append(shift[userKey]);
   }
+  //heiroglyphics
+  else if ($("input:checked").val() == "heiroglyphics") {
+    if(userKey == 32){
+      textArea.textContent += letters[32];
+    }
+    else {
+      $("#textArea").append("<img src='images/heiroglyphics/" + letters[userKey] + ".gif'>");
+    }
+  }
+
 });
 
 
