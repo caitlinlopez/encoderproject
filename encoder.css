@@ -1,11 +1,11 @@
 body {
   text-align: center;
+  font-family: 'Special Elite', cursive;
 }
 
 #textArea {
   width: 700px;
-  height: 150px;
-  font-family: 'Nunito', sans-serif;
+  height: 100px;
   font-size: 36px;
 }
 
@@ -25,14 +25,12 @@ body {
   margin-left: 10px;
   margin-top: 80px;
   margin-bottom: 0px;
-  font-family: sans-serif;
   font-size: 18px;
 }
 
 #translationArea {
   width: 700px;
-  height: 150px;
-  font-family: 'Nunito', sans-serif;
+  height: 100px;
   font-size: 36px;
   margin-top: 0px;
 }

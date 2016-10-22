@@ -2,27 +2,31 @@
 <html>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="encoder.css">
 
     <title>
-        Encoder
+        Encoder/Decoder
     </title>
 </head>
 
 <body>
-<div id="textArea"></div>
-<div style="margin: auto;" id="inputArea"><textarea id="inputText"></textarea></div>
-<div id="translationChoices">
-  <input type="radio" name="echo" value="echo"> Echo<br>
-  <input type="radio" name="caesarCipher" value="caesarCipher"> Caesar cipher<br>
-  <input type="radio" name="heiroglyphics" value="heiroglyphics"> Heiroglyphics<br>
-</div>
 
-<div id="translationArea"></div>
-<div id="translationInputArea"><textarea id="translationInputText"></textarea></div>
+  <div id="textArea"></div>
+  <p style="margin-top: 0px; margin-bottom: 0px;">ENCODER</p>
+  <div style="margin: auto;" id="inputArea"><textarea id="inputText"></textarea></div>
+  <div id="translationChoices">
+    <input type="radio" name="echo" value="echo"> ECHO<br>
+    <input type="radio" name="caesarCipher" value="caesarCipher"> CAESAR CIPHER<br>
+    <input type="radio" name="heiroglyphics" value="heiroglyphics"> HEIROGLYPHICS<br>
+    <input type="radio" name="keyword" value="keyword"> KEYWORD<br>
+  </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="encoder.js"></script>
+  <div id="translationArea"></div>
+  <p style="margin-top: 0px; margin-bottom: 0px;">DECODER</p>
+  <div id="translationInputArea"><textarea id="translationInputText"></textarea></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="encoder.js"></script>
 </body>
 </html>

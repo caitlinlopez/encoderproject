@@ -59,6 +59,35 @@ var shift = {
   90 : "a"
 }
 
+var keyword = {
+  65 : "p",
+  66 : "e",
+  67 : "a",
+  68 : "c",
+  69 : "h",
+  70 : "b",
+  71 : "d",
+  72 : "f",
+  73 : "g",
+  74 : "i",
+  75 : "j",
+  76 : "k",
+  77 : "l",
+  78 : "m",
+  79 : "n",
+  80 : "o",
+  81 : "q",
+  82 : "r",
+  83 : "s",
+  84 : "t",
+  85 : "u",
+  86 : "v",
+  87 : "w",
+  88 : "x",
+  89 : "y",
+  90 : "z"
+}
+
 var decoder = {
   65 : "z",
   66 : "a",
@@ -119,7 +148,9 @@ $("#inputText").keydown(function(e) {
       $("#textArea").append("<img src='images/heiroglyphics/" + letters[userKey] + ".gif'>");
     }
   }
-
+  else if ($("input:checked").val() == "keyword") {
+    $("#textArea").append(keyword[userKey]);
+  }
 });
 
 
