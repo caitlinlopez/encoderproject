@@ -148,8 +148,18 @@ $("#inputText").keydown(function(e) {
       $("#textArea").append("<img src='images/heiroglyphics/" + letters[userKey] + ".gif'>");
     }
   }
+  //keyword
   else if ($("input:checked").val() == "keyword") {
     $("#textArea").append(keyword[userKey]);
+  }
+  //runes
+  else if ($("input:checked").val() == "runes") {
+    if(userKey == 32){
+      textArea.textContent += letters[32];
+    }
+    else {
+      $("#textArea").append("<img src='images/runes/" + letters[userKey] + ".gif'>");
+    }
   }
 });
 
